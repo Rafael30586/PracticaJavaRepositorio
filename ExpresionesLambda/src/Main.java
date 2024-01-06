@@ -14,6 +14,20 @@ public class Main {
         System.out.println("------------------------------------------------");
 
         palabras.forEach(p -> System.out.println("Es un/a "+p));
+        System.out.println("------------------------------------------------");
+
+        palabras.forEach(p -> {
+            System.out.println(p+" azul");
+            System.out.println(p+" rojo");
+            System.out.println(p.toLowerCase());
+        });
+        /*
+        palabras.forEach(p->{
+            p = p + " azul";
+            return p;
+        })->System.out.println();*/
+
+
 
 
         //System.out.println("Hello world!");
