@@ -1,13 +1,11 @@
 import java.util.Optional;
 
 public class Auto {
-    /*
-    public Optional<String> devoleverPalabra(int x){
-        String autito = "autito";
-
-        if(x>8){
-            return autito;
+    public Optional<String> devolverCadena(String cadenita){
+        if(cadenita.length()>8){
+            return Optional.of(cadenita);
+        }else{
+            return Optional.empty();
         }
-
-    }*/
+    }
 }
