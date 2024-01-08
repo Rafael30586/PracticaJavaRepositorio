@@ -16,14 +16,21 @@ public class Main {
         juegos.add(new VideoJuego("Mass effect 2",new Marca("Bioware")));
         juegos.add(new VideoJuego("Street fighter II",new Marca("Capcom")));
 
+
+        Long comienzo6 = System.nanoTime();
+        juegos.stream().parallel().forEach(juego -> System.out.println(juego.getDesarrollador().getNombre()));
+        Long fin6 = System.nanoTime();
+        System.out.println("Diferencia stream con for each y parallel: "+(fin6 - comienzo6)+" ms");
+
+
         Long comienzo = System.nanoTime();
-        for(int i = 0;i<juegos.size();i++){
+        for(int i = 0;i<juegos.size();i++){ //1374832 ms
             System.out.println(juegos.get(i).getDesarrollador().getNombre());
         }
         Long fin = System.nanoTime();
         System.out.println("Diferencia for normal: "+(fin - comienzo)+" ms");
 
-        Long comienzo2 = System.nanoTime();
+        Long comienzo2 = System.nanoTime(); //1368138 ms
         for(VideoJuego juego : juegos){
             System.out.println(juego.getDesarrollador().getNombre());
         }
@@ -43,6 +50,12 @@ public class Main {
         }
         Long fin4 = System.nanoTime();
         System.out.println("Diferencia for each (2): "+(fin4 - comienzo4)+" ms");
+
+        Long comienzo5 = System.nanoTime();
+        juegos.stream().forEach(juego -> System.out.println(juego.getDesarrollador().getNombre()));
+        Long fin5 = System.nanoTime();
+        System.out.println("Diferencia stream con for each: "+(fin5 - comienzo5)+" ms");
+
 
         //System.out.println("Hello world!");
     }
