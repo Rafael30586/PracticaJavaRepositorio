@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ClaseImplementadora claseImplementadora = new ClaseImplementadora();
+
+        claseImplementadora.saludar("Hola");
+
+        //System.out.println("Hello world!");
     }
 }
