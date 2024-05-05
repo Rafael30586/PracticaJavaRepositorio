@@ -5,13 +5,29 @@ public class Main {
     public static void main(String[] args) {
 
         Persona per1 = new Persona();
-        per1.setNombres("Rafael");
-        per1.setApellidos("Alvarez");
-        per1.setDni(32361730);
-        per1.setFechaNacimiento(LocalDate.of(1986, Month.MAY,30));
 
-        String nombreYApellido = per1.mostrarNombreYApellido();
+        probarInterfaz(per1);
 
+        probarInterfaz(()-> System.out.println("Chau loco"));
+
+        probarOtraInterfaz(() -> {
+                String f = "Jodanse";
+                return f;
+        });
+
+        probarUnaInterfazMas("rtf",(f) -> System.out.println(f));
         //System.out.println("Hello world!");
+    }
+
+    public static void probarInterfaz(UnaInterfaz unaInterfaz){
+        unaInterfaz.mostrarNombreYApellido();
+    }
+
+    public static void probarOtraInterfaz(OtraInterfaz otraInterfaz){
+        otraInterfaz.joder();
+    }
+
+    public static void probarUnaInterfazMas(String j,UnaInterfazMas unaInterfazMas){
+        unaInterfazMas.mostrarAlgo(j);
     }
 }

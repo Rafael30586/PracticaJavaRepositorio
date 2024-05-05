@@ -39,8 +39,9 @@ public class Persona implements UnaInterfaz{
         this.fechaNacimiento = fechaNacimiento;
     }
 
+
     @Override
-    public String mostrarNombreYApellido() {
-        return nombres+" "+apellidos;
+    public void mostrarNombreYApellido() {
+        System.out.println("Hola");
     }
 }
