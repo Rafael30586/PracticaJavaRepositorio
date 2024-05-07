@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileInputStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,6 +7,13 @@ public class Main {
         File foto = new File("C:\\Users\\Usuario\\Pictures\\icons\\power_icon_512.png");
         File directorio = new File("C:\\Users\\Usuario\\Downloads\\carpetilla");
         File[] archivos = File.listRoots();
+        try{
+            FileInputStream fileInputStream = new FileInputStream(foto);
+            System.out.println(fileInputStream.read());
+        }catch (Exception e){
+            System.out.println("Malió sal");
+        }
+
 
         System.out.println("Se puede leer: "+foto.canRead());
         System.out.println("Se puede ejecutar: "+foto.canExecute());
