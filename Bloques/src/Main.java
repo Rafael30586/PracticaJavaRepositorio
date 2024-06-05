@@ -37,6 +37,7 @@ public class Main {
         System.out.println("El hexadecimal es igual a: "+t.hexadecimal);
 
         paquete.ClaseAProbar prueba = new paquete.ClaseAProbar();
+        //Al instanciar la clase con el nombre del paquete no hace falta importar la clase ClaseAProbar
 
         System.out.println("El nombre es "+prueba.getPruebita().getNombre());
 

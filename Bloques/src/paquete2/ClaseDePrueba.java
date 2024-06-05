@@ -10,7 +10,7 @@ public class ClaseDePrueba {
      *
      * @return El nombre que le puse
      */
-    public String getNombre() {
-        return nombre;
+    public String getNombre() { //Para colocar esos comentarios de arriba hay que apretar...
+        return nombre; //...barra, asterisco, asterisco y enter
     }
 }
