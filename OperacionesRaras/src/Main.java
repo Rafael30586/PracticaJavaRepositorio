@@ -16,7 +16,7 @@ public class Main {
                          //34 porque x > 12 == true, luego 34 de vuelta porque z < 200 == true
         int c = z < 200 ? x > 12 ? 34 : 12 : 76; //ojo con esto
         System.out.println("c: "+c);
-        
+
         //System.out.println("Hello world!");
     }
 }
