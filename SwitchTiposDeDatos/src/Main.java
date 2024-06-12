@@ -20,7 +20,7 @@ public class Main {
             case MIERCOLES -> {
 
             }
-            
+
         }
 
         //Tipos de datos permitidos en switch: int, Integer, byte, Byte, short, Short
