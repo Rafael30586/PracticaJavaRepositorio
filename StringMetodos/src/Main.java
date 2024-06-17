@@ -44,9 +44,20 @@ public class Main {
         System.out.println("replace: "+cadenas[1].replace("antas","mono"));
         System.out.println("split: "+cadenas[1].split("a"));
         String[] splits = cadenas[1].split("a"); //Arranca la letra a y guarda las partes...
-        for(int i=0;i<splits.length;i++){//...restantes en un array
-            System.out.print(splits[i]+",");
+        for(int i=0;i<splits.length;i++) {//...restantes en un array
+            System.out.print(splits[i] + ",");
         }
+        System.out.println(" ");
+        System.out.println("startsWith: "+juegos.get(2).startsWith("TLo"));
+        System.out.println("startsWith: "+juegos.get(1).startsWith("eet",3));
+        System.out.println("Strip: "+cadenas[2].strip());
+        System.out.println("StripIndent: "+cadenas[2].stripIndent());//no se muy la diferencia con el...
+        //...anterior
+        System.out.println("stripLeading:"+cadenas[1].stripLeading());//Saca el espacio vacio anterior...
+        //...al texto
+        System.out.println("stripLeading:"+cadenas[1].stripTrailing());//Saca el espacio vacio posterior...
+        //...al texto
+
 
         //System.out.println("Hello world!");
     }
