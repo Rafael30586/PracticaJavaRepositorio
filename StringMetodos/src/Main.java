@@ -57,6 +57,16 @@ public class Main {
         //...al texto
         System.out.println("stripLeading:"+cadenas[1].stripTrailing());//Saca el espacio vacio posterior...
         //...al texto
+        System.out.println("subString: "+cadenas[1].substring(6));//Toma todo el string a partir...
+        //...del indice como parametro
+        System.out.println("subString: "+cadena.substring(1,2));//Toma el substring desde el indice indicado...
+        //...hasta el del final (al del final no lo incluye)
+        char[] letras = juegos.get(1).toCharArray();
+        for(int i = 0; i<letras.length;i++){
+            System.out.println("charArray: + "+letras[i]);
+        }
+        System.out.println("trim: "+cadenas[2].trim());
+        System.out.println("valueOf: "+String.valueOf(340));
 
 
         //System.out.println("Hello world!");
