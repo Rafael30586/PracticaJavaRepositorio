@@ -15,7 +15,7 @@ public class OtraClaseMas extends OtraClase{
 class ClaseColgada{
 
     public ClaseColgada() {
-        
+
     }
 
 }
