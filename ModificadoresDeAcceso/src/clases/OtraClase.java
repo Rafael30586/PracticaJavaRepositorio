@@ -1,6 +1,6 @@
 package clases;
 
-public class OtraClase extends  UnaClase{
+public class OtraClase extends UnaClase{
 
     public OtraClase(long unAtributo) {
         super(unAtributo);
@@ -15,4 +15,12 @@ public class OtraClase extends  UnaClase{
         return 8;
     }
 
+}
+
+class OtraClaseColagada{
+    public OtraClaseColagada() {
+        OtraClaseMas otraClaseMas = new OtraClaseMas(320_034L);
+        otraClaseMas.devolverSaludo(); //Este método protected se puede usar porque pertenece a una clase...
+                                       //...que está en el mismo paquete.
+    }
 }
